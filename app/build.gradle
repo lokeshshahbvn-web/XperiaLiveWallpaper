@@ -1,0 +1,12 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.sonymobile.wallpaper.xperiaflow'
+    compileSdk 36
+    defaultConfig {
+        applicationId "com.sonymobile.wallpaper.xperiaflow"
+        minSdk 26
+        targetSdk 36
+        versionCode 100
+        versionName "1.0.0"
+    }
+}
