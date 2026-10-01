@@ -38,8 +38,8 @@ public class XperiaFlowWallpaperService extends WallpaperService {
         private float mTouchForce = 0f;
         private long mStartTime;
 
-        private final float mSpeed = 0.9f;
-        private final float mTouchSens = 1.7f;
+        private final float mSpeed = 0.35f;
+        private final float mTouchSens = 1.2f;
 
         private final Runnable mDrawRunnable = new Runnable() {
             @Override
@@ -56,7 +56,7 @@ public class XperiaFlowWallpaperService extends WallpaperService {
 
             mCrestPaint.setStyle(Paint.Style.STROKE);
             mCrestPaint.setStrokeWidth(3.0f);
-            mCrestPaint.setColor(Color.parseColor("#d5e2e8"));
+            mCrestPaint.setColor(Color.parseColor("#f4e4d7"));
         }
 
         @Override
@@ -126,8 +126,8 @@ public class XperiaFlowWallpaperService extends WallpaperService {
             // 1. Ambient Background Gradient
             mBackgroundPaint.setShader(new LinearGradient(
                 0, 0, w * 0.35f, h,
-                Color.parseColor("#5c666b"),
-                Color.parseColor("#1c2124"),
+                Color.parseColor("#4a3c36"),
+                Color.parseColor("#130d0b"),
                 Shader.TileMode.CLAMP
             ));
             canvas.drawRect(0, 0, w, h, mBackgroundPaint);
@@ -161,7 +161,7 @@ public class XperiaFlowWallpaperService extends WallpaperService {
             mPath.lineTo(w, h);
             mPath.close();
 
-            mRibbonPaint.setColor(Color.parseColor("#93a2a9"));
+            mRibbonPaint.setColor(Color.parseColor("#c7a791"));
             mRibbonPaint.setAlpha(220);
             canvas.drawPath(mPath, mRibbonPaint);
             canvas.drawPath(mPath, mCrestPaint);

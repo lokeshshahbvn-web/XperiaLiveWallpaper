@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:label="Xperia Flow - Platinum Silver"
+        android:label="Xperia Flow - Rose Bronze"
         android:icon="@mipmap/ic_launcher"
         android:supportsRtl="true">
 
@@ -17,7 +17,7 @@
             android:name=".XperiaFlowWallpaperService"
             android:enabled="true"
             android:exported="true"
-            android:label="Xperia Flow (Platinum Silver)"
+            android:label="Xperia Flow (Rose Bronze)"
             android:permission="android.permission.BIND_WALLPAPER">
             <intent-filter>
                 <action android:name="android.service.wallpaper.WallpaperService" />
